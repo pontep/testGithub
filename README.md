@@ -7,12 +7,3 @@ Test Github Tool (SE)
 ทดสอบนะ  
 Hello world by LEO  
 CreAte WoRld bY LeE  
-
-Test Nov 17, 2019
-Hello Testing
-
-Test Test
-Can't tell me nuttin' Bowl
-
-Hello test three ED4
-I'm Basuka right now! dud.
