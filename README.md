@@ -14,4 +14,4 @@ Hello Testing
 Test Test
 Can't tell me nuttin' Bowl
 
-Test on www.github.com
+Test on github
