@@ -1,10 +1,6 @@
 # testGithub
-Test Github Tool (SE)
-
-1.PONTEP THAWEESUP B6000783
-2.test B60test
-3.Test number 3
-4.TESTTTTTTTTTTTTTTTTTTTTT(4)
-5.Newlnwza007
-6.pleza5552
-7.Thanathon
+Test Github Tool (SE)  
+1.PONTEP THAWEESUP B6000783  
+2.Newlnwza007  
+3.pleza5552  
+4.Thanathon  
