@@ -7,9 +7,12 @@ Test Github Tool (SE)
 ทดสอบนะ  
 Hello world by LEO  
 CreAte WoRld bY LeE  
-
+git@github.com:dincracker/testGithub.git
 Edit on githib
 IIIIII
 
 Huh
 haha
+again
+Hello
+lolo
