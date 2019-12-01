@@ -3,4 +3,5 @@
 B6000783  
 Din Eak rob  
 มาเด้ไอสอง #black  
-Din round 3 conflic!
+Din round 3 conflic!  
+conflic ชัวร์
