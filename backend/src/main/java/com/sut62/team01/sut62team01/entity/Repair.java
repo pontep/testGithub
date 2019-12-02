@@ -1,4 +1,4 @@
-package com.Dormitory.dormitory.entity;
+package com.sut62.team01.sut62team01.entity;
 
 import lombok.*;
 
