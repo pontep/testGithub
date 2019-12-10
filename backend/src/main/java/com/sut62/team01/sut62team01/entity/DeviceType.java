@@ -16,7 +16,12 @@ public class DeviceType{
 
     private @NonNull long id;
 
-    private @NonNull String type;
+    private @NonNull String electrictype;
+
+    private @NonNull String plumbingtype;
+
+    private @NonNull String buildingstype;
+
 
     @OneToMany(fetch = FetchType.EAGER)
     

@@ -26,8 +26,8 @@ public class Repair {
 
     private Long id;
 
-    @Column(name = "MANNER")
-    private String manner;
+    @Column(name = "List")
+    private String  list;
 
     @Column(name = "Repair_Date")
     private Date repairDate;
@@ -36,12 +36,17 @@ public class Repair {
     @JoinColumn(name = "DEVICETYPE_ID", insertable = true)
     private DeviceType type;
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Room.class)
-    @JoinColumn(name = "ROOM_ID", insertable = true)
-    private Room room;
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = DeviceProblem.class)
+    @JoinColumn(name = "DEVICEPROBLEMS_ID", insertable = true)
+    private DeviceProblem problem;
+    
+    
+    /**
+     * รอของฟร้องที่จะเชื่อม
+     */
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Student.class)
-    @JoinColumn(name = "STUDENT_ID", insertable = true)
-    private Student studentNotify;
+  
+
+   
 
 }
