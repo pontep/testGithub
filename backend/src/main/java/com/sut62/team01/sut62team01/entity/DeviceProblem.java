@@ -17,10 +17,24 @@ public class DeviceProblem {
 
     private @NonNull long id;
 
-    private @NonNull String problem;
+    private @NonNull String electricproblem;
+
+    private @NonNull String plumbingproblem;
+    
+    private @NonNull String buildingproblem; 
 
     @OneToMany(fetch = FetchType.EAGER)
 
     private Collection<Repair> repair;
+
+    public DeviceProblem(){}
+
+    public DeviceProblem(String electricproblem , String plumbingproblem , String buildingproblem){
+        this.electricproblem = electricproblem;
+        this.plumbingproblem = plumbingproblem;
+        this.buildingproblem = buildingproblem;
+
+
+    }
 
 }

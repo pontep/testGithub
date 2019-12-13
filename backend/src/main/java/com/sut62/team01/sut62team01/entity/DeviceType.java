@@ -27,5 +27,14 @@ public class DeviceType{
     
     private Collection<Repair> repair;
 
+    public DeviceType(){}
+
+    public DeviceType(String electrictype , String plumbingtype , String buildingstype){
+        this.electrictype = electrictype;
+        this.plumbingtype = plumbingtype;
+        this.buildingstype = buildingstype;
+
+
+    }
 
 }
