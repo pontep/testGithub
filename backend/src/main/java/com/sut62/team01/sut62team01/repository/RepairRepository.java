@@ -1,4 +1,4 @@
-import com.sut62.team01.sut62team01.repository;
+package com.sut62.team01.sut62team01.repository;
 
 import com.sut62.team01.sut62team01.entity.Repair;
 
