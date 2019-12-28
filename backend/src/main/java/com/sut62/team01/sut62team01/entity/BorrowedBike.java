@@ -28,11 +28,6 @@ public class BorrowedBike {
     @Column(name = "BORROWED_BIKE_ID")
     @NotNull private long id;
     
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = DormitoryConsultan.class)
-    @JoinColumn(name = "DORM_ID", insertable = true)
-    @JsonManagedReference
-    private @NotNull DormitoryConsultan dormitoryConsultan;
-    
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = BorrowedBikeType.class)
     @JoinColumn(name = "BORROWED_BIKE_TYPE_ID", insertable = true)
     @JsonManagedReference
