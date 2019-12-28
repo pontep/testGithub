@@ -1,1 +1,3 @@
-test Readme
+# README
+backend: ./dinentity  
+frontend: ../front  
