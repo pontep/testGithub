@@ -81,6 +81,13 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-btn icon large>
+        <v-avatar size="32px" item>
+          <v-img
+            src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
+            alt="Vuetify"
+        /></v-avatar>
+      </v-btn>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
         <span class="hidden-sm-and-down">SUT Dormitory</span>
       </v-toolbar-title>
@@ -99,15 +106,8 @@
       <v-btn icon>
         <v-icon>mdi-bell</v-icon>
       </v-btn>
-      <!-- <v-btn icon large>
-        <v-avatar size="32px" item>
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
-            alt="Vuetify"
-        /></v-avatar>
-      </v-btn> -->
       <template v-if="isSignin">
-        <v-btn text> {{ user.username }} </v-btn>
+        <v-btn text @click="handleProfile"> {{ user.name }} </v-btn>
         <v-menu left bottom>
           <template v-slot:activator="{ on }">
             <v-btn icon v-on="on">
@@ -164,6 +164,13 @@ export default {
           click: () => {
             this.$router.push("/borrowedBike");
           }
+        },
+        {
+          icon: "mdi-contacts",
+          text: "จักรยานที่ฉันแจ้งยืม",
+          click: () => {
+            this.$router.push("/myborrowedBike");
+          }
         }
         // { icon: "mdi-history", text: "Frequently contacted" },
         // { icon: "mdi-content-copy", text: "Duplicates" },
@@ -204,6 +211,9 @@ export default {
     }
   },
   methods: {
+    handleProfile() {
+      this.$router.push("/profile");
+    },
     handleSignout() {
       if (confirm("Do you want to sign out?")) {
         this.isSignin = false;
